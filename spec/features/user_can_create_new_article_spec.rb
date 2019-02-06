@@ -7,7 +7,6 @@ describe "when a user creates a new article" do
         click_link "Create a New Article"
 
         expect(current_path).to eq(new_article_path)
-
         fill_in "article[title]", with: "New Title!"
         fill_in "article[body]", with: "New Body"
         click_on "Create Article"
