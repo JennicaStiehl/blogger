@@ -13,6 +13,7 @@ describe "when a user is at an article show page" do
       fill_in "article[title]", with: "New Title!"
       fill_in "article[body]", with: "New Body"
       click_on "Submit"
+      expect(page).to have_content("Article #{article_1.id} was updated!")
     end
   end
 end

@@ -13,6 +13,7 @@ describe "when a user creates a new article" do
 
         expect(page).to have_content("New Title!")
         expect(page).to have_content("New Body")
+        expect(page).to have_content("The article was created.")
       end
     end
   end
