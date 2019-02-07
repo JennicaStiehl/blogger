@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+* {
+  font-style: helvetica;
+  border-color: navy;
+}
+body {
+  color: navy;
+}
+nav {
+  color: white;
+  background-color: navy;
+  display: in-inline;
+}
+nav a {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+a:visited {
+  color: navy;
+}
