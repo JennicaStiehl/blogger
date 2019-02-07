@@ -12,7 +12,7 @@ describe "when a user is at an article show page" do
       expect(current_path).to eq(edit_article_path(article_1))
       fill_in "article[title]", with: "New Title!"
       fill_in "article[body]", with: "New Body"
-      click_on "Save Article"
+      click_on "Submit"
     end
   end
 end
