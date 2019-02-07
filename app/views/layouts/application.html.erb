@@ -9,7 +9,13 @@
   </head>
 
   <body>
-    <p> class="flash"><%= flash.notice %></p>
+    <nav>
+      <%= link_to "All Articles", articles_path %>
+      <%= link_to "Create a New Article", new_article_path, class: "new-article" %>
+      
+
+    </nav>
+    <p class="flash"><%= flash.notice %></p>
     <%= yield %>
   </body>
 </html>
