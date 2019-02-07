@@ -11,6 +11,7 @@ describe "when a user visits the show page" do
       expect(current_path).to eq(articles_path)
       expect(page).to have_content(article_2.title)
       expect(page).to_not have_content(article_1.title)
+      expect(page).to have_content("Article #{article_1.id} was deleted.")
     end
   end
 end
